@@ -62,14 +62,19 @@ public class Ch3Ex13 {
 
         if (income <= money1) {
             tax = income * taxRate1;
+
         } else if (income <= money2) {
             tax = money1 * taxRate1 + (income - money1) * taxRate2;
+
         } else if (income <= money3) {
-            tax = money1 * taxRate1 + (money2 - money1) * taxRate2 + (income - money3) * taxRate3;
+            tax = money1 * taxRate1 + (money2 - money1) * taxRate2 + (income - money2) * taxRate3;
+
         } else if (income <= money4) {
-            tax = money1 * taxRate1 + (money2 - money1) * taxRate2 + (money3 - money2) * taxRate3 + (income - money4) * taxRate4;
+            tax = money1 * taxRate1 + (money2 - money1) * taxRate2 + (money3 - money2) * taxRate3 + (income - money3) * taxRate4;
+
         } else if (income <= money5) {
             tax = money1 * taxRate1 + (money2 - money1) * taxRate2 + (money3 - money2) * taxRate3 + (money4 - money3) * taxRate4 + (income - money4) * taxRate5;
+
         } else {
             tax = money1 * taxRate1 + (money2 - money1) * taxRate2 + (money3 - money2) * taxRate3 + (money4 - money3) * taxRate4 + (money5 - money4) * taxRate5 + (income - money5) * taxRate6;
         }
